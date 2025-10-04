@@ -43,15 +43,6 @@ const styles = {
   `,
 }
 
-const messageStyles: Record<string, string | string[]> = {
-  user: [
-    'ml-auto bg-primary text-primary-foreground break-words text-red-400',
-  ],
-  assistant: [
-    'bg-muted dark:prose-invert prose-code:text-foreground text-shadow-indigo-400',
-  ],
-};
-
 export function Button({
   children,
   leftIcon,
