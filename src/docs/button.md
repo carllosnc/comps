@@ -1,27 +1,17 @@
 # Buttons
 
-## Download
-
-```c
-npx github-download-directory carllosnc/react-thekit src/components/Button
-```
-
 ## Import
 
 ```tsx
 import { Button } from '@/components'
 ```
 
-## Anatomy
-
-`<Button />` extends `React.ButtonHTMLAttributes<HTMLButtonElement>`, then you can use all props and event of `<button>`
-
 ## Dependencies
 
 [ReactIcon](https://react-icons.github.io/react-icons/)
 
-```c
-npm install react-icons
+```shell
+bun add react-icons
 ```
 
 ## Usage
