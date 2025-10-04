@@ -1,16 +1,66 @@
 ---
-
+import MainLayout from "../layouts/main-layout.astro";
+import {
+  LuRectangleHorizontal,
+  LuArrowDownFromLine,
+  LuStar,
+} from "react-icons/lu";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import { FaReact } from "react-icons/fa";
+import { Button } from "../components/buttons";
+import { MdStar } from "react-icons/md";
+import { ButtonExample } from "../examples/button-example";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <div class="flex flex-col gap-[10px]">
+    <div class="py-[50px] px-[20px]">
+      <h1 class="font-bold text-neutral-900 text-[60px]">COMPS</h1>
+      <p class="text-neutral-500">Easy React components</p>
+    </div>
+
+    <hr class="w-full border-neutral-200" />
+
+    <div class="p-[20px] flex gap-[10px]">
+      <RiTailwindCssFill className="text-neutral-400" size={30} />
+      <TbBrandFramerMotion className="text-neutral-400" size={30} />
+      <FaReact className="text-neutral-400" size={30} />
+    </div>
+
+    <hr class="w-full border-neutral-200" />
+
+    <div class="p-[20px] flex flex-col gap-[10px]">
+      <p class="text-neutral-500">Just one file per component</p>
+      <p class="text-neutral-500">No need package manage, just copy and past</p>
+      <p class="text-neutral-500">
+        Explicity dependencies: Tailwind, React, Motion and React icons
+      </p>
+      <p class="text-neutral-500">Miminal code for implementation and usage</p>
+    </div>
+
+    <hr class="w-full border-neutral-200" />
+
+    <div class="p-[20px] flex flex-col gap-[10px]">
+      <b class="text-[14px]"> COMPONENTS </b>
+      <a href="#" class="flex gap-[18px] items-center">
+        <LuRectangleHorizontal size={18} />
+        <span> Buttons </span>
+      </a>
+      <a href="#" class="flex gap-[18px] items-center">
+        <LuArrowDownFromLine size={18} />
+        <span> Expander </span>
+      </a>
+    </div>
+
+    <hr class="w-full border-neutral-200" />
+    <ButtonExample />
+    <hr class="w-full border-neutral-200" />
+
+    <div class="p-[20px]">
+      <small class="text-neutral-500 text-center w-full block">
+        Coded and designed by Carlos Costa
+      </small>
+    </div>
+  </div>
+</MainLayout>
