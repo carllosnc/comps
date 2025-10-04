@@ -1,23 +1,18 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
-import {
-  LuRectangleHorizontal,
-  LuArrowDownFromLine,
-  LuStar,
-} from "react-icons/lu";
+import { LuRectangleHorizontal, LuArrowDownFromLine } from "react-icons/lu";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
-import { Button } from "../components/buttons";
-import { MdStar } from "react-icons/md";
 import { ButtonExample } from "../examples/button-example";
+import { ExpanderExample } from "../examples/expander-example";
 ---
 
 <MainLayout>
-  <div class="flex flex-col gap-[10px]">
-    <div class="py-[50px] px-[20px]">
-      <h1 class="font-bold text-neutral-900 text-[60px]">COMPS</h1>
-      <p class="text-neutral-500">Easy React components</p>
+  <div class="flex flex-col gap-[20px]">
+    <div class="py-[30px] px-[20px]">
+      <h1 class="font-bold text-neutral-900 text-[60px] text-center">COMPS</h1>
+      <p class="text-neutral-500 text-center">Easy React components</p>
     </div>
 
     <hr class="w-full border-neutral-200" />
@@ -42,7 +37,6 @@ import { ButtonExample } from "../examples/button-example";
     <hr class="w-full border-neutral-200" />
 
     <div class="p-[20px] flex flex-col gap-[10px]">
-      <b class="text-[14px]"> COMPONENTS </b>
       <a href="#" class="flex gap-[18px] items-center">
         <LuRectangleHorizontal size={18} />
         <span> Buttons </span>
@@ -55,6 +49,8 @@ import { ButtonExample } from "../examples/button-example";
 
     <hr class="w-full border-neutral-200" />
     <ButtonExample />
+    <hr class="w-full border-neutral-200" />
+    <ExpanderExample client:only />
     <hr class="w-full border-neutral-200" />
 
     <div class="p-[20px]">
