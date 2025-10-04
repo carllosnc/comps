@@ -8,7 +8,7 @@ export function ExpanderExample(){
       <div className="flex flex-col gap-[10px]">
         <Expander title="First expander">
           <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni molestias quidem ex placeat? Mollitia minima exercitationem, voluptatum, voluptatibus voluptate quis facere doloremque perspiciatis tenetur autem deleniti, illo incidunt nam quaerat.</p>
-        </Expander> w
+        </Expander>
         <Expander title="Second expander">
           <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni molestias quidem ex placeat? Mollitia minima exercitationem, voluptatum, voluptatibus voluptate quis facere doloremque perspiciatis tenetur autem deleniti, illo incidunt nam quaerat.</p>
         </Expander>
