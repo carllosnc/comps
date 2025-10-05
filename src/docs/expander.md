@@ -8,10 +8,8 @@ import { Expander } from '@/components'
 
 ## Dependencies
 
-[ReactIcon](https://react-icons.github.io/react-icons/)
-
 ```shell
-bun add react-icons
+bun add react-icons motion
 ```
 
 ## Usage
