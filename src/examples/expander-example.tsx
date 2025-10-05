@@ -2,7 +2,7 @@ import { Expander } from "../components/expander";
 
 export function ExpanderExample(){
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="expander-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Expander</h3>
 
       <div className="flex flex-col gap-[10px]">
