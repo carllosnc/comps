@@ -3,7 +3,7 @@ import { Button } from "../components/buttons";
 
 export function ButtonExample(){
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="button-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Buttons</h3>
 
       <div className="flex flex-wrap gap-[10px]">
