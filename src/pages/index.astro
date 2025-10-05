@@ -1,11 +1,16 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
-import { LuRectangleHorizontal, LuArrowDownFromLine } from "react-icons/lu";
+import {
+  LuRectangleHorizontal,
+  LuArrowDownFromLine,
+  LuMaximize2,
+} from "react-icons/lu";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { ButtonExample } from "../examples/button-example";
 import { ExpanderExample } from "../examples/expander-example";
+import { ImageExpanderExample } from "../examples/image-expander-example";
 ---
 
 <MainLayout>
@@ -36,14 +41,18 @@ import { ExpanderExample } from "../examples/expander-example";
 
     <hr class="w-full border-neutral-200" />
 
-    <div class="p-[20px] flex flex-col gap-[10px]">
-      <a href="#" class="flex gap-[18px] items-center">
-        <LuRectangleHorizontal size={18} />
+    <div class="p-[20px] flex flex-col gap-[15px]">
+      <a href="#button-example" class="flex gap-[18px] items-center">
+        <LuRectangleHorizontal size={22} />
         <span> Buttons </span>
       </a>
-      <a href="#" class="flex gap-[18px] items-center">
-        <LuArrowDownFromLine size={18} />
+      <a href="#expander-example" class="flex gap-[18px] items-center">
+        <LuArrowDownFromLine size={22} />
         <span> Expander </span>
+      </a>
+      <a href="#image-expander-example" class="flex gap-[18px] items-center">
+        <LuMaximize2 size={22} />
+        <span> Image Expander </span>
       </a>
     </div>
 
@@ -51,6 +60,8 @@ import { ExpanderExample } from "../examples/expander-example";
     <ButtonExample />
     <hr class="w-full border-neutral-200" />
     <ExpanderExample client:only />
+    <hr class="w-full border-neutral-200" />
+    <ImageExpanderExample client:only />
     <hr class="w-full border-neutral-200" />
 
     <div class="p-[20px]">
