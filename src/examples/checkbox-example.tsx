@@ -14,7 +14,7 @@ export function CheckboxExample(){
 
   return (
     <div className="p-[20px] flex flex-col gap-[30px]" id="checkbox-example">
-      <h3 className="text-neutral-800 font-bold text-[20px]">Buttons</h3>
+      <h3 className="text-neutral-800 font-bold text-[20px]">Checkbox</h3>
 
       <div className="flex flex-wrap gap-[10px]">
         <div className="flex flex-col gap-4">
