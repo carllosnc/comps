@@ -48,7 +48,6 @@ function App() {
 ```
 
 ## Props
-
 | name    | type         | default     | description |
 | ------- | ------------ | ----------- | ----------- |
 | `thumb` | ReactElement | `undefined` | thumbnail   |
