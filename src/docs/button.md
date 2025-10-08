@@ -1,19 +1,16 @@
 # Buttons
 
 ## Import
-
 ```tsx
 import { Button } from '@/components'
 ```
 
 ## Dependencies
-
 ```shell
 bun add react-icons
 ```
 
 ## Usage
-
 ```tsx
 import { Button } from '@/components'
 import { MdStar, MdHeadset } from 'react-icons/md'
@@ -39,7 +36,6 @@ function App() {
 ```
 
 ## Props
-
 | name        | type                                                    | default     | description   |
 | ----------- | ------------------------------------------------------- | ----------- | ------------- |
 | `children`  | string                                                  | `undefined` | button label  |

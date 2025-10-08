@@ -1,19 +1,16 @@
 # Expander
 
 ## Import
-
 ```jsx
 import { Expander } from '@/components'
 ```
 
 ## Dependencies
-
 ```shell
 bun add react-icons motion
 ```
 
 ## Usage
-
 ```jsx
 import { Expander } from '@/components'
 
@@ -29,7 +26,6 @@ function App() {
 ```
 
 ## Props
-
 | name       | type   | default     | description      |
 | ---------- | ------ | ----------- | ---------------- |
 | `title`    | string | `undefined` | expander title   |
