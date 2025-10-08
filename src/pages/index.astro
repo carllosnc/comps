@@ -5,6 +5,7 @@ import {
   LuArrowDownFromLine,
   LuMaximize2,
   LuTextCursorInput,
+  LuPictureInPicture2,
 } from "react-icons/lu";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -13,6 +14,7 @@ import { ButtonExample } from "../examples/button-example";
 import { ExpanderExample } from "../examples/expander-example";
 import { ImageExpanderExample } from "../examples/image-expander-example";
 import { InputExample } from "../examples/input-example";
+import { ModalExample } from "../examples/modal-examples";
 ---
 
 <MainLayout>
@@ -61,6 +63,11 @@ import { InputExample } from "../examples/input-example";
         <LuTextCursorInput size={22} />
         <span> Input </span>
       </a>
+
+      <a href="#modal-example" class="flex gap-[18px] items-center">
+        <LuPictureInPicture2 size={22} />
+        <span> Modal </span>
+      </a>
     </div>
 
     <hr class="w-full border-neutral-200" />
@@ -71,6 +78,8 @@ import { InputExample } from "../examples/input-example";
     <ImageExpanderExample client:only />
     <hr class="w-full border-neutral-200" />
     <InputExample />
+    <hr class="w-full border-neutral-200" />
+    <ModalExample client:only />
 
     <div class="p-[20px]">
       <small class="text-neutral-500 text-center w-full block">
