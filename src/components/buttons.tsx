@@ -23,6 +23,7 @@ const styles = {
     gap-2
     hover:bg-neutral-700
   `,
+
   button__loading: `
     gap-3
     justify-center
@@ -30,10 +31,12 @@ const styles = {
     hover:bg-neutral-800
     !cursor-not-allowed
   `,
+
   button__icon: `
     opacity-50
     text-base
   `,
+
   button__loading__animation: `
     w-[20px]
     h-[20px]
