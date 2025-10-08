@@ -50,15 +50,9 @@ const styles = {
   `,
 
   input__icon:`
-    [&+svg]:w-[18px]
-    [&+svg]:h-[18px
-    [&+svg]:text-neutral-500
-  `,
-
-  input__success:`
-    [&+svg]:w-[18px]
-    [&+svg]:h-[18px]
-    [&+svg]:text-lime-700
+    [&>svg]:w-[18px]
+    [&>svg]:h-[18px]
+    [&>svg]:text-neutral-500
   `,
 
   input__field:`
@@ -131,7 +125,7 @@ const Input = forwardRef(
           />
 
           {success && (
-            <span data-testid="input-success" className={styles.input__success}>
+            <span data-testid="input-success">
               <FiCheck />
             </span>
           )}
