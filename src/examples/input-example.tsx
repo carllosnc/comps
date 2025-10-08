@@ -3,7 +3,7 @@ import { FiMail, FiUser } from "react-icons/fi";
 
 export function InputExample(){
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]" id="button-example">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="input-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Inputs</h3>
 
       <div className="flex flex-col flex-wrap gap-[10px]">
