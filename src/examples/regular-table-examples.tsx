@@ -14,7 +14,7 @@ export function RegularTableExample(){
       'self phone': '782-675-4790 x013',
       status: (
         <span className="flex w-[120px] whitespace-nowrap gap-2 items-center py-1 px-3 bg-green-200 text-green-900 rounded-full">
-          <TbCheck /> Complete
+          <TbCheck /> Completed
         </span>
       ),
     },
@@ -36,7 +36,7 @@ export function RegularTableExample(){
       'self phone': '590-531-8012',
       status: (
         <span className="flex w-[120px] whitespace-nowrap gap-2 items-center py-1 px-3 bg-green-200 text-green-900 rounded-full">
-          <TbCheck /> Complete
+          <TbCheck /> Completed
         </span>
       ),
     },
@@ -54,7 +54,7 @@ export function RegularTableExample(){
   ]
 
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]" id="button-example">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="regular-table-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Regular table</h3>
 
       <div className="flex flex-wrap gap-[10px]">
