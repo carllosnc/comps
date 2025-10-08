@@ -16,6 +16,7 @@ const styles = {
     outline-offset-4
     outline-neutral-400
   `,
+
   expander__title: `
     font-bold
     text-neutral-800
@@ -26,9 +27,11 @@ const styles = {
     gap-2
     items-center
   `,
+
   expander__container: `
     overflow-hidden
   `,
+
   expander__content: `
     @apply
     overflow-hidden
@@ -36,6 +39,7 @@ const styles = {
     pt-0
     text-neutral-600
   `,
+
   expander__arrow: `
     @apply
     text-base
