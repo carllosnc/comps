@@ -6,7 +6,7 @@ export function InputExample(){
     <div className="p-[20px] flex flex-col gap-[30px]" id="input-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Inputs</h3>
 
-      <div className="flex flex-col flex-wrap gap-[10px]">
+      <div className="flex flex-col flex-wrap gap-[20px]">
         <Input placeholder="ex: John doe" type="text" />
 
         <Input label="Name" placeholder="ex: John Doe" type="text" />
