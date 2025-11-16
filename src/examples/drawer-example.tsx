@@ -5,7 +5,7 @@ export function DrawerExample(){
   const [drawer1, openDrawer1, closeDrawer1] = useDrawer()
 
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]" id="button-example">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="drawer-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Drawer</h3>
 
       <div className="flex flex-wrap gap-[10px]">
@@ -14,14 +14,14 @@ export function DrawerExample(){
         <Drawer isOpen={drawer1} onClose={closeDrawer1}>
           <div className="flex flex-col gap-4">
             <h3 className="font-bold"> Drawer example </h3>
-            <p>
+            <p className="text-[14px] text-neutral-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
               ipsa iusto corporis. Impedit quae cupiditate officiis tempore harum
               hic atque, ipsam nihil omnis. Aperiam vero explicabo eligendi
               inventore saepe maiores!
             </p>
 
-            <p>
+            <p className="text-[14px] text-neutral-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
               ipsa iusto corporis. Impedit quae cupiditate officiis tempore harum
               hic atque, ipsam nihil omnis. Aperiam vero explicabo eligendi

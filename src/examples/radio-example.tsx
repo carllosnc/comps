@@ -24,12 +24,11 @@ export function RadioExample(){
   })
 
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]" id="modal-example">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="radio-example">
       <h3 className="text-neutral-800 font-bold text-[20px]"> Radio </h3>
 
       <div className="flex flex-col gap-4">
         <Radio values={values} onChange={changeHandle} />
-        <hr className="border-zinc-200" />
         <p className="text-green-700">Selected: {radioValue}</p>
       </div>
 

@@ -8,6 +8,11 @@ import {
   LuPictureInPicture2,
   LuTable,
   LuCheck,
+  LuPanelLeft,
+  LuChartNoAxesGantt,
+  LuCircle,
+  LuPanelTopDashed,
+  LuSquareChevronDown,
 } from "react-icons/lu";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -23,6 +28,7 @@ import { RadioExample } from "../examples/radio-example";
 import { RevealExample } from "../examples/reveal-example";
 import { TabsExample } from "../examples/tabs-example";
 import { DrawerExample } from "../examples/drawer-example";
+import { SelectExample } from "../examples/select-example";
 ---
 
 <MainLayout>
@@ -77,6 +83,16 @@ import { DrawerExample } from "../examples/drawer-example";
         <span> Modal </span>
       </a>
 
+      <a href="#drawer-example" class="flex gap-[18px] items-center">
+        <LuPanelLeft size={22} />
+        <span> Drawer </span>
+      </a>
+
+      <a href="#reveal-example" class="flex gap-[18px] items-center">
+        <LuChartNoAxesGantt size={22} />
+        <span> Reveal </span>
+      </a>
+
       <a href="#regular-table-example" class="flex gap-[18px] items-center">
         <LuTable size={22} />
         <span> Regular Table </span>
@@ -85,6 +101,21 @@ import { DrawerExample } from "../examples/drawer-example";
       <a href="#checkbox-example" class="flex gap-[18px] items-center">
         <LuCheck size={22} />
         <span> Checkbox </span>
+      </a>
+
+      <a href="#radio-example" class="flex gap-[18px] items-center">
+        <LuCircle size={22} />
+        <span> Radio </span>
+      </a>
+
+      <a href="#tabs-example" class="flex gap-[18px] items-center">
+        <LuPanelTopDashed size={22} />
+        <span> Tabs </span>
+      </a>
+
+      <a href="#select-example" class="flex gap-[18px] items-center">
+        <LuSquareChevronDown size={22} />
+        <span> Select </span>
       </a>
     </div>
 
@@ -99,7 +130,10 @@ import { DrawerExample } from "../examples/drawer-example";
     <hr class="w-full border-neutral-200" />
     <ModalExample client:only />
     <hr class="w-full border-neutral-200" />
+    <DrawerExample client:only />
+    <hr class="w-full border-neutral-200" />
     <RevealExample client:only />
+    <hr class="w-full border-neutral-200" />
     <RegularTableExample />
     <hr class="w-full border-neutral-200" />
     <CheckboxExample client:only />
@@ -108,7 +142,8 @@ import { DrawerExample } from "../examples/drawer-example";
     <hr class="w-full border-neutral-200" />
     <TabsExample client:only />
     <hr class="w-full border-neutral-200" />
-    <DrawerExample client:only />
+    <SelectExample client:only />
+    <hr class="w-full border-neutral-200" />
 
     <div class="p-[20px]">
       <small class="text-neutral-500 text-center w-full block">

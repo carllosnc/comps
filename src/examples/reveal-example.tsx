@@ -2,7 +2,7 @@ import { Reveal } from "../components/reveal";
 
 export function RevealExample(){
   return (
-    <div className="p-[20px] flex flex-col gap-[30px]" id="button-example">
+    <div className="p-[20px] flex flex-col gap-[30px]" id="reveal-example">
       <h3 className="text-neutral-800 font-bold text-[20px]">Reveal</h3>
 
       <div className="flex flex-col flex-wrap gap-[10px]">

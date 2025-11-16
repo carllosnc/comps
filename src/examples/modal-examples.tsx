@@ -1,4 +1,3 @@
-import { MdStar } from "react-icons/md";
 import { Button } from "../components/buttons";
 import { Modal, useModal } from "../components/modal";
 
@@ -14,14 +13,21 @@ export function ModalExample(){
           <div className="flex flex-col gap-4">
             <h3 className="font-bold"> Modal example </h3>
 
-            <p>
+            <p className="text-[14px] text-neutral-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
               ipsa iusto corporis. Impedit quae cupiditate officiis tempore harum
               hic atque, ipsam nihil omnis. Aperiam vero explicabo eligendi
               inventore saepe maiores!
             </p>
 
-            <p>
+            <p className="text-[14px] text-neutral-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+              ipsa iusto corporis. Impedit quae cupiditate officiis tempore harum
+              hic atque, ipsam nihil omnis. Aperiam vero explicabo eligendi
+              inventore saepe maiores!
+            </p>
+
+            <p className="text-[14px] text-neutral-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
               ipsa iusto corporis. Impedit quae cupiditate officiis tempore harum
               hic atque, ipsam nihil omnis. Aperiam vero explicabo eligendi
