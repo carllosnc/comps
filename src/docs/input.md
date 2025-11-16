@@ -1,10 +1,5 @@
 # Input
 
-## Import
-```jsx
-import { Input } from '@/components'
-```
-
 ## Anatomy
 `<Input />` extends `React.InputHTMLAttributes<HTMLInputElement>`, then you can use all props and event of `<input>`
 

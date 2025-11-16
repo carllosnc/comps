@@ -1,10 +1,5 @@
 # Expander
 
-## Import
-```jsx
-import { Expander } from '@/components'
-```
-
 ## Dependencies
 ```shell
 bun add react-icons motion

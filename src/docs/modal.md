@@ -1,10 +1,5 @@
 # Modal
 
-## Import
-```jsx
-import { Modal, useModal } from '@/components'
-```
-
 ## Usage
 ```jsx
 import { Modal, useModal } from '@/components'

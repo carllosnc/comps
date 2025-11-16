@@ -1,10 +1,5 @@
 # Buttons
 
-## Import
-```tsx
-import { Button } from '@/components'
-```
-
 ## Dependencies
 ```shell
 bun add react-icons

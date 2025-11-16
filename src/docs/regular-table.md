@@ -1,10 +1,5 @@
 # Table
 
-## Import
-```typescript
-import { RegularTable, DataTable } from '@/components'
-```
-
 ## Usage
 Simple data
 

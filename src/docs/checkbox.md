@@ -1,10 +1,5 @@
 # Checkbox
 
-## Import
-```tsx
-import { Checkbox, useCheckbox } from '@/components'
-```
-
 ## Usage
 ```tsx
 import { Checkbox, useCheckbox } from '@/components'
