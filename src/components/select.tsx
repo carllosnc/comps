@@ -6,7 +6,7 @@ export type SelectItem = {
   value: string | number
 }
 
-interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
+interface SelectProps extends React.ComponentProps<'select'> {
   items: SelectItem[]
   placeholder?: string
   label?: string
