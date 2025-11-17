@@ -40,13 +40,12 @@ export function InfiniteSlider({
           animationDirection: direction === "right" ? "reverse" : "normal",
         }}
       >
-        {/* First set of items */}
         {React.Children.map(children, (child, index) => (
           <div key={`first-${index}`} className={`flex ${gap}`}>
             {child}
           </div>
         ))}
-        {/* Duplicate set for seamless loop */}
+
         {React.Children.map(children, (child, index) => (
           <div key={`second-${index}`} className={`flex ${gap}`}>
             {child}
