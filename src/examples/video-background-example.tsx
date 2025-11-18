@@ -7,7 +7,7 @@ export function VideoBackgroundExample(){
       <h3 className="text-neutral-800 font-bold text-[20px]">Video background</h3>
 
       <div className="flex flex-wrap gap-[10px]">
-        <VideoBackground video="https://videos.pexels.com/video-files/20315562/20315562-hd_1280_720_30fps.mp4">
+        <VideoBackground video="https://videos.pexels.com/video-files/6010489/6010489-uhd_1440_2560_25fps.mp4">
           <div className="flex flex-col items-center gap-4 text-white text-center">
             <TbSun className="text-7xl animate-bounce" />
             <h1 className="text-4xl font-bold"> COMPS </h1>
