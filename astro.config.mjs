@@ -9,13 +9,16 @@ import mdx from '@astrojs/mdx';
 
 import cloudflare from '@astrojs/cloudflare';
 
+import vercel from '@astrojs/vercel';
+
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), mdx()],
 
   vite: {
+    // @ts-ignore
     plugins: [tailwindcss()]
   },
 
-  adapter: cloudflare()
+  adapter: vercel()
 });
