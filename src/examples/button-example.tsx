@@ -1,5 +1,5 @@
 import { MdStar } from "react-icons/md";
-import { Button } from "../components/buttons";
+import { Button } from "../components/button";
 
 export function ButtonExample(){
   return (
