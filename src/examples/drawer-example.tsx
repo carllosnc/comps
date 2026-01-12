@@ -1,4 +1,4 @@
-import { Button } from "../components/buttons";
+import { Button } from "../components/button";
 import { Drawer, useDrawer } from "../components/drawer";
 
 export function DrawerExample(){
