@@ -1,4 +1,4 @@
-import { Button } from "../components/buttons";
+import { Button } from "../components/button";
 import { Modal, useModal } from "../components/modal";
 
 export function ModalExample(){
