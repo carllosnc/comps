@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "regular-table",
+  "files": [
+    {
+      "path": "src/components/regular-table.tsx",
+      "content": "type RegularTableProps = {\r\n  data: Object[]\r\n}\r\n\r\nconst styles = {\r\n  regular_table:`\r\n    w-full\r\n    text-sm\r\n    overflow-auto\r\n    text-neutral-700\r\n  `,\r\n\r\n  regular_table_table: `\r\n    w-full\r\n    min-w-[600px]\r\n    table-auto\r\n  `,\r\n\r\n  regular_table_th: `\r\n    text-left\r\n    py-3\r\n    border-b\r\n    capitalize\r\n    border-neutral-400\r\n  `,\r\n\r\n  regular_table_tr:`\r\n    border-b\r\n    border-neutral-200\r\n  `,\r\n\r\n  regular_table_td:`\r\n    py-3\r\n  `\r\n}\r\n\r\nexport function RegularTable({ data }: RegularTableProps) {\r\n  return (\r\n    <div data-testid=\"rt-wrapper\" className={styles.regular_table}>\r\n      <table data-testid=\"rt-table\" className={styles.regular_table_table}>\r\n        <thead data-testid=\"rt-theader\">\r\n          <tr>\r\n            {Object.keys(data[0]).map((item, index) => {\r\n              return (\r\n                <th data-testid=\"rt-title\" key={index + 10} className={styles.regular_table_th}>\r\n                  {item}\r\n                </th>\r\n              )\r\n            })}\r\n          </tr>\r\n        </thead>\r\n\r\n        <tbody data-testid=\"rt-tbody\">\r\n          {data.map((line, index) => {\r\n            return (\r\n              <tr key={index + 100} className={styles.regular_table_tr}>\r\n                {Object.values(line).map((item, index) => {\r\n                  return (\r\n                    <td data-testid=\"rt-item\" key={index + 1000} className={styles.regular_table_td}>\r\n                      {item}\r\n                    </td>\r\n                  )\r\n                })}\r\n              </tr>\r\n            )\r\n          })}\r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  )\r\n}\r\n\r\nexport type DataTable<T extends Object> = T[]\r\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:ui"
+}

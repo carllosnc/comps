@@ -1,0 +1,149 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "version": "1.0.0",
+  "description": "Comps UI Components",
+  "name": "comps",
+  "homepage": "https://comps-react.vercel.app/",
+  "items": [
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/checkbox.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/drawer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "expander",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/expander.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "image-expander",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/image-expander.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "infinite-slider",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/infinite-slider.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/input.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "modal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/modal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "radio",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/radio.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "regular-table",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/regular-table.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "reveal",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/reveal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/select.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "video-background",
+      "type": "registry:ui",
+      "files": [
+        {
+          "path": "src/components/video-background.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}

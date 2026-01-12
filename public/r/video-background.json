@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "video-background",
+  "files": [
+    {
+      "path": "src/components/video-background.tsx",
+      "content": "import { type ReactNode } from 'react'\r\n\r\ntype VideoBackgroundProps = {\r\n  video: string\r\n  children?: ReactNode\r\n  className?: string\r\n}\r\n\r\nconst styles = {\r\n  video_background:`\r\n    relative\r\n    flex\r\n    justify-center\r\n    items-center\r\n    w-full\r\n    h-[600px]\r\n    overflow-hidden\r\n    bg-black\r\n  `,\r\n  video_background_media:`\r\n    absolute\r\n    z-0\r\n    w-auto\r\n    saturate-150\r\n    min-w-full\r\n    min-h-full\r\n    max-w-none\r\n    mix-blend-normal\r\n  `,\r\n  video_background_content:`\r\n    p-4\r\n    z-0\r\n    justify-center\r\n    items-center\r\n    flex\r\n    flex-col\r\n    bg-black/20\r\n    backdrop-blur-xs\r\n    w-full\r\n    h-full\r\n  `\r\n}\r\n\r\nexport function VideoBackground({ children, video }: VideoBackgroundProps) {\r\n  return (\r\n    <section data-testid=\"video-background\" className={styles.video_background}>\r\n      <video\r\n        data-testid=\"video-background-media\"\r\n        className={styles.video_background_media}\r\n        autoPlay\r\n        muted\r\n        loop\r\n        id=\"myVideo\"\r\n      >\r\n        <source src={video} type=\"video/mp4\" />\r\n      </video>\r\n\r\n      <div\r\n        data-testid=\"video-background-content\"\r\n        className={styles.video_background_content}\r\n      >\r\n        {children}\r\n      </div>\r\n    </section>\r\n  )\r\n}",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:ui"
+}

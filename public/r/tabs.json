@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs",
+  "files": [
+    {
+      "path": "src/components/tabs.tsx",
+      "content": "import {\r\n  Fragment,\r\n  type ReactElement,\r\n  type ReactNode,\r\n  useState\r\n} from 'react'\r\n\r\nimport { motion } from 'framer-motion'\r\n\r\ntype TabProps = {\r\n  children: ReactNode\r\n}\r\n\r\nexport function Tab({ children }: TabProps) {\r\n  return <Fragment>{children}</Fragment>\r\n}\r\n\r\ntype TabsProps = {\r\n  children: ReactElement[]\r\n  labels: string[]\r\n}\r\n\r\nconst styles = {\r\n  tabs: `\r\n    flex\r\n    flex-col\r\n    gap-[20px]\r\n  `,\r\n  tabs__header: `\r\n    flex\r\n    border-b-[2px]\r\n    border-neutral-200\r\n  `,\r\n  tabs__button: `\r\n    w-full\r\n    relative\r\n  `,\r\n  tabs__button__item: `\r\n    w-full\r\n    cursor-pointer\r\n    p-3\r\n    text-center\r\n    text-neutral\r\n    transition-all\r\n    hover:bg-neutral-100\r\n  `,\r\n  tabs__button__line: `\r\n    h-[2px]\r\n    absolute\r\n    -bottom-[2px]\r\n    bg-black\r\n    w-full\r\n  `\r\n}\r\n\r\nexport function Tabs({ labels, children }: TabsProps) {\r\n  const [currentTab, setCurrentTab] = useState<number>(0)\r\n\r\n  return (\r\n    <section data-testid=\"tabs\" className={styles.tabs}>\r\n      <header data-testid=\"tabs-header\" className={styles.tabs__header}>\r\n        {labels.map((item, index) => {\r\n          return (\r\n            <div\r\n              data-testid=\"tabs-button\"\r\n              className={styles.tabs__button}\r\n              key={`${item}${index}`}\r\n            >\r\n              <button\r\n                data-testid=\"tabs-item\"\r\n                onClick={() => setCurrentTab(index)}\r\n                className={styles.tabs__button__item}\r\n              >\r\n                {item}\r\n              </button>\r\n\r\n              {index === currentTab && (\r\n                <motion.div\r\n                  data-testid=\"tabs-line\"\r\n                  layoutId=\"tab\"\r\n                  className={styles.tabs__button__line}\r\n                />\r\n              )}\r\n            </div>\r\n          )\r\n        })}\r\n      </header>\r\n\r\n      {children.map((tab, index) => {\r\n        if (index === currentTab) {\r\n          return <div key={index}> {tab} </div>\r\n        }\r\n      })}\r\n    </section>\r\n  )\r\n}",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:ui"
+}

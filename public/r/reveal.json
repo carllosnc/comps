@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "reveal",
+  "files": [
+    {
+      "path": "src/components/reveal.tsx",
+      "content": "import { motion } from 'framer-motion'\r\nimport type { ReactNode } from 'react'\r\n\r\ntype RevealProps = {\r\n  className?: string\r\n  children: ReactNode\r\n  delay?: number\r\n  duration?: number\r\n  type?: 'DOWN' | 'UP' | 'LEFT' | 'RIGHT' | 'SCALE' | 'ROTATE'\r\n}\r\n\r\nconst DOWN = {\r\n  start: {\r\n    opacity: 0,\r\n    translateY: '-150px',\r\n  },\r\n  end: {\r\n    opacity: 1,\r\n    translateY: '0px',\r\n  },\r\n}\r\n\r\nconst UP = {\r\n  start: {\r\n    opacity: 0,\r\n    translateY: '150px',\r\n  },\r\n  end: {\r\n    opacity: 1,\r\n    translateY: '0px',\r\n  },\r\n}\r\n\r\nconst LEFT = {\r\n  start: {\r\n    opacity: 0,\r\n    translateX: '-150px',\r\n  },\r\n  end: {\r\n    opacity: 1,\r\n    translateX: '0px',\r\n  },\r\n}\r\n\r\nconst RIGHT = {\r\n  start: {\r\n    opacity: 0,\r\n    translateX: '150px',\r\n  },\r\n  end: {\r\n    opacity: 1,\r\n    translateX: '0px',\r\n  },\r\n}\r\n\r\nconst SCALE = {\r\n  start: {\r\n    scale: 0.5,\r\n    opacity: 0,\r\n  },\r\n  end: {\r\n    scale: 1,\r\n    opacity: 1,\r\n  },\r\n}\r\n\r\nconst ROTATE = {\r\n  start: {\r\n    rotate: 45,\r\n    opacity: 0,\r\n  },\r\n  end: {\r\n    rotate: 0,\r\n    opacity: 1,\r\n  },\r\n}\r\n\r\nexport function Reveal({\r\n  children,\r\n  delay = 0,\r\n  type,\r\n  duration = 1,\r\n  className = '',\r\n}: RevealProps) {\r\n  let ANIMATE: any = DOWN\r\n\r\n  if (type === 'DOWN') ANIMATE = DOWN\r\n  if (type === 'UP') ANIMATE = UP\r\n  if (type === 'LEFT') ANIMATE = LEFT\r\n  if (type === 'RIGHT') ANIMATE = RIGHT\r\n  if (type === 'SCALE') ANIMATE = SCALE\r\n  if (type === 'ROTATE') ANIMATE = ROTATE\r\n\r\n  return (\r\n    <motion.div\r\n      className={className}\r\n      data-testid=\"reveal\"\r\n      transition={{\r\n        delay: delay,\r\n        duration: duration,\r\n        type: 'spring',\r\n        bounce: 0.4,\r\n      }}\r\n      initial={ANIMATE.start}\r\n      whileInView={ANIMATE.end}\r\n      viewport={{ once: true, amount: 0.6, margin: \"-100px 0px\" }}\r\n    >\r\n      {children}\r\n    </motion.div>\r\n  )\r\n}",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:ui"
+}

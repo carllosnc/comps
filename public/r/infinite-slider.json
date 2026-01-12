@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "infinite-slider",
+  "files": [
+    {
+      "path": "src/components/infinite-slider.tsx",
+      "content": "import React from \"react\"\r\nimport cn from \"clsx\"\r\n\r\ninterface InfiniteSliderProps {\r\n  children: React.ReactNode\r\n  speed?: \"slow\" | \"normal\" | \"fast\"\r\n  direction?: \"left\" | \"right\"\r\n  className?: string\r\n  gap?: string\r\n  pauseOnHover?: boolean\r\n}\r\n\r\nexport function InfiniteSlider({\r\n  children,\r\n  speed = \"normal\",\r\n  direction = \"left\",\r\n  className,\r\n  gap = \"gap-8\",\r\n  pauseOnHover = true,\r\n}: InfiniteSliderProps) {\r\n  const speedClasses = {\r\n    slow: \"animate-scroll-slow\",\r\n    normal: \"animate-scroll\",\r\n    fast: \"animate-scroll-fast\",\r\n  }\r\n\r\n  const directionClass = direction === \"right\" ? \"reverse\" : \"\"\r\n\r\n  return (\r\n    <div className={cn(\"overflow-hidden whitespace-nowrap group\", pauseOnHover && \"cursor-pointer\", className)}>\r\n      <div\r\n        className={cn(\r\n          \"inline-flex items-center\",\r\n          speedClasses[speed],\r\n          directionClass,\r\n          gap,\r\n          pauseOnHover && \"group-hover:animation-play-state-paused\",\r\n        )}\r\n        style={{\r\n          animationDirection: direction === \"right\" ? \"reverse\" : \"normal\",\r\n        }}\r\n      >\r\n        {React.Children.map(children, (child, index) => (\r\n          <div key={`first-${index}`} className={`flex ${gap}`}>\r\n            {child}\r\n          </div>\r\n        ))}\r\n\r\n        {React.Children.map(children, (child, index) => (\r\n          <div key={`second-${index}`} className={`flex ${gap}`}>\r\n            {child}\r\n          </div>\r\n        ))}\r\n      </div>\r\n    </div>\r\n  )\r\n}",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:ui"
+}
